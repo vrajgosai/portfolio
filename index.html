@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vraj Portfolio</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
+</head><body class="fade-in">
+  <header class="nav">
+    <div class="logo">VRAJ</div>
+    <button id="burger" aria-label="Menu" class="burger">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="timepass.html">Game Mode</a></li>
+        <li><button id="toggle-dark" class="moon" aria-label="Toggle dark mode">☾</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home" data-fade>
+    <h1>Designed by Vraj<br>Built with soul</h1>
+    <p class="subtitle">Scroll to explore the work ↓</p>
+
+  </section>
+
+  <section class="section" id="about" data-fade>
+    <h1>About Me</h1>
+    <p class="subtitle">I turn blank pages into thoughtful, engaging digital experiences.</p>
+    <a href="about.html" class="btn">More about me →</a>
+    
+
+  </section>
+
+  <section class="section" id="projects" data-fade>
+    <h1>My Projects</h1>
+    <p class="subtitle">Selected projects, prototypes and passion pieces.</p>
+    <a href="projects.html" class="btn">See Projects →</a>
+   
+  </section>
+
+  <section class="section" id="contact" data-fade>
+    <h1>Let’s Connect</h1>
+    <p class="subtitle">Interested in collaborating or just chatting? Let’s connect.</p>
+    <a href="contact.html" class="btn">Contact Me →</a>
+
+
+  </section>
+
+  <div class="orb-container">
+    <div class="orb-revolve blue"></div>
+    <div class="orb-revolve orange"></div>
+  </div>
+<!-- Ambient orb (now clickable) -->
+<div class="orb-wrapper" title="Chat with Vraj">
+  <div id="ambient-orb"></div>
+  <span class="orb-label">Talk to Vraj</span>
+</div>
+
+
+<!-- Simple chat panel (hidden by default) -->
+<div id="vraj-chat">
+  <header>Vraj Bot <button id="chat-close">×</button></header>
+  <main>
+    <p class="bot">Hey there 👋 How can I help?</p>
+  </main>
+  <footer>
+    <input id="chat-input" placeholder="Type a message…" autocomplete="off">
+  </footer>
+</div>
+
+
+
+
+
+
+
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+
+  <script src="js/main.js"></script>
+</body></html>
